@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LTTE LO — Style for Every Age, Every Gender, Every Occasion</title>
+  <meta name="description" content="LTTE LO is a modern clothing brand offering ethnic, traditional, casual, denim, kids, men's, women's, and unisex collections for all ages at affordable prices." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="navbar__brand">LTTE LO</a>
+
+    <ul class="navbar__links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="navbar__cart" id="cartBtn" aria-label="Shopping cart">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="navbar__cart-count" id="cartCount">0</span>
+    </button>
+
+    <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <!-- Ambient orbs -->
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+
+    <div class="hero__content">
+      <div class="hero__text">
+        <div class="hero__badge">New Season 2026</div>
+        <h1 class="hero__title">
+          Style for Every Age,<br />
+          Every Gender,<br />
+          Every <span>Occasion</span>
+        </h1>
+        <p class="hero__subtitle">
+          Discover curated collections that blend tradition with contemporary flair. 
+          Affordable fashion for kids, teens, adults &amp; seniors — all in one place.
+        </p>
+        <div class="hero__actions">
+          <a href="#products" class="btn btn--primary">
+            <i class="fa-solid fa-bag-shopping"></i> Shop Now
+          </a>
+          <a href="#categories" class="btn btn--outline">
+            <i class="fa-solid fa-grip"></i> Explore
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__image-wrap">
+        <img src="images/hero_banner.png" alt="LTTE LO — floating clothing collection" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CATEGORIES ==================== -->
+  <section class="section" id="categories">
+    <p class="section__eyebrow reveal">Shop by Category</p>
+    <h2 class="section__title reveal">Find Your Perfect Style</h2>
+    <p class="section__subtitle reveal">
+      From timeless ethnic classics to everyday casual comfort — we have something for everyone.
+    </p>
+
+    <div class="categories-grid">
+      <!-- Ethnic Wear -->
+      <div class="category-card reveal" data-category="ethnic">
+        <img class="category-card__img" src="images/ethnic_wear.png" alt="Ethnic Wear" />
+        <div class="category-card__overlay">
+          <span class="category-card__name">Ethnic Wear</span>
+          <span class="category-card__count">24 Products</span>
+        </div>
+      </div>
+      <!-- Traditional Wear -->
+      <div class="category-card reveal" data-category="traditional">
+        <div class="category-card__gradient category-card__gradient--traditional">👘</div>
+        <div class="category-card__overlay">
+          <span class="category-card__name">Traditional Wear</span>
+          <span class="category-card__count">18 Products</span>
+        </div>
+      </div>
+      <!-- Casual Wear -->
+      <div class="category-card reveal" data-category="casual">
+        <img class="category-card__img" src="images/casual_wear.png" alt="Casual Wear" />
+        <div class="category-card__overlay">
+          <span class="category-card__name">Casual Wear</span>
+          <span class="category-card__count">32 Products</span>
+        </div>
+      </div>
+      <!-- Denim Collection -->
+      <div class="category-card reveal" data-category="denim">
+        <img class="category-card__img" src="images/denim_collection.png" alt="Denim Collection" />
+        <div class="category-card__overlay">
+          <span class="category-card__name">Denim Collection</span>
+          <span class="category-card__count">20 Products</span>
+        </div>
+      </div>
+      <!-- Kids Collection -->
+      <div class="category-card reveal" data-category="kids">
+        <img class="category-card__img" src="images/kids_collection.png" alt="Kids Collection" />
+        <div class="category-card__overlay">
+          <span class="category-card__name">Kids Collection</span>
+          <span class="category-card__count">28 Products</span>
+        </div>
+      </div>
+      <!-- Men's Collection -->
+      <div class="category-card reveal" data-category="mens">
+        <div class="category-card__gradient category-card__gradient--mens">👔</div>
+        <div class="category-card__overlay">
+          <span class="category-card__name">Men's Collection</span>
+          <span class="category-card__count">30 Products</span>
+        </div>
+      </div>
+      <!-- Women's Collection -->
+      <div class="category-card reveal" data-category="womens">
+        <div class="category-card__gradient category-card__gradient--womens">👗</div>
+        <div class="category-card__overlay">
+          <span class="category-card__name">Women's Collection</span>
+          <span class="category-card__count">35 Products</span>
+        </div>
+      </div>
+      <!-- Unisex Collection -->
+      <div class="category-card reveal" data-category="unisex">
+        <div class="category-card__gradient category-card__gradient--unisex">🧥</div>
+        <div class="category-card__overlay">
+          <span class="category-card__name">Unisex Collection</span>
+          <span class="category-card__count">22 Products</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED PRODUCTS ==================== -->
+  <section class="section" id="products">
+    <p class="section__eyebrow reveal">Featured Collection</p>
+    <h2 class="section__title reveal">Trending Right Now</h2>
+    <p class="section__subtitle reveal">
+      Hand-picked favourites across every category — fresh drops &amp; all-time classics.
+    </p>
+
+    <!-- Filter bar -->
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ethnic">Ethnic</button>
+      <button class="filter-btn" data-filter="traditional">Traditional</button>
+      <button class="filter-btn" data-filter="casual">Casual</button>
+      <button class="filter-btn" data-filter="denim">Denim</button>
+      <button class="filter-btn" data-filter="kids">Kids</button>
+      <button class="filter-btn" data-filter="mens">Men's</button>
+      <button class="filter-btn" data-filter="womens">Women's</button>
+      <button class="filter-btn" data-filter="unisex">Unisex</button>
+    </div>
+
+    <!-- Product cards — populated by JS -->
+    <div class="products-grid" id="productsGrid">
+      <!-- JS will inject cards here -->
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__visual reveal">
+        <div class="about__circle">
+          <span class="about__circle-text">LL</span>
+        </div>
+      </div>
+
+      <div class="about__text reveal">
+        <h2>About <span>LTTE LO</span></h2>
+        <p>
+          Born from a simple idea — that great fashion should be accessible to everyone, 
+          regardless of age, gender, or occasion. <strong>LTTE LO</strong> brings you 
+          thoughtfully designed collections that celebrate individuality and comfort.
+        </p>
+        <p>
+          From vibrant ethnic silhouettes to laid-back denim staples, 
+          every piece is crafted with care and priced to make you smile.
+          We believe style isn't a privilege — it's a right.
+        </p>
+
+        <div class="about__stats">
+          <div>
+            <div class="about__stat-num">200+</div>
+            <div class="about__stat-label">Products</div>
+          </div>
+          <div>
+            <div class="about__stat-num">50K+</div>
+            <div class="about__stat-label">Happy Customers</div>
+          </div>
+          <div>
+            <div class="about__stat-num">8</div>
+            <div class="about__stat-label">Categories</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section" id="contact">
+    <p class="section__eyebrow reveal">Get in Touch</p>
+    <h2 class="section__title reveal">We'd Love to Hear From You</h2>
+    <p class="section__subtitle reveal">
+      Have a question, a suggestion, or just want to say hi? Drop us a message!
+    </p>
+
+    <div class="contact__inner reveal">
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="contactName" placeholder=" " required />
+          <label for="contactName">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="contactEmail" placeholder=" " required />
+          <label for="contactEmail">Email Address</label>
+        </div>
+        <div class="form-group">
+          <textarea id="contactMessage" placeholder=" " required></textarea>
+          <label for="contactMessage">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn--primary">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand">LTTE LO</div>
+        <p class="footer__desc">
+          Style for Every Age, Every Gender, Every Occasion. Affordable, 
+          inclusive fashion that celebrates you.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer__social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="footer__social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#categories">Ethnic Wear</a></li>
+          <li><a href="#categories">Casual Wear</a></li>
+          <li><a href="#categories">Denim Collection</a></li>
+          <li><a href="#categories">Kids Collection</a></li>
+          <li><a href="#categories">Unisex Collection</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#contact">Help Center</a></li>
+          <li><a href="#contact">Shipping Info</a></li>
+          <li><a href="#contact">Returns &amp; Exchanges</a></li>
+          <li><a href="#contact">Size Guide</a></li>
+          <li><a href="#contact">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      &copy; 2026 <strong>LTTE LO</strong>. All rights reserved. Made with ❤️ in India.
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
